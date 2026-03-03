@@ -124,12 +124,12 @@ header {
     width: 100%;
     margin-bottom: 20px;
     padding-bottom: 40px;
+    overflow-wrap: break-word;
 }
 
 .infos img {
-    width: 300px;
-    height: 300px;
-    margin: 0 20px;
+    height: 250px;
+    margin: 0 30px;
     border-radius: 15px;
     transition: transform 0.2s, color 0.2s;
 }
@@ -145,10 +145,62 @@ header {
 
 #info2 {
     background-color: #272927;
+    margin-bottom: 90px;
 }
 
 .infos-text {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow-wrap: break-word;
+    padding: 20px;
+}
+
+.infos-text p {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: large;
+}
+
+#consulta-botao {
+    padding: 20px;
+    background-color: #4b5e4b;
+    color: #f6fff6;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: large;
+    transition: transform 0.2s, color 0.2s;
+}
+
+#consulta-botao:hover {
+    transform: scale(1.2);
+    background-color: #242c24;
+}
+
+#rodape {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 966px) {
+  .infos-text {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 50px;
+  }
+
+  .infos img {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 536px) {
+    #bio {
+        width: 300px;
+    }
 }
