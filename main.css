@@ -117,3 +117,38 @@ header {
 .exemplos-foto img:hover {
     transform: scale(1.1); 
 }
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+.infos img {
+    width: 300px;
+    height: 300px;
+    margin: 0 20px;
+    border-radius: 15px;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.infos img:hover {
+    transform: scale(1.1); 
+}
+
+#info1 {
+    background-color: #0d0e0d;
+    background: linear-gradient(to right, #0d0e0d, #272927);
+}
+
+#info2 {
+    background-color: #272927;
+}
+
+.infos-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
